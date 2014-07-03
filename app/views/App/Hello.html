@@ -1,0 +1,21 @@
+{{set . "title" "Oh new Home"}}
+{{template "header.html" .}}
+
+<h1>Hello {{.data.account.name}}</h1>
+
+<div>
+    {{range $k, $v := .data}}
+        <span>
+            {{if eq $k  "ads"}}
+                used {{$k}}
+            {{else}}
+                unused {{$k}}
+            {{end}}
+        </span>
+
+    {{end}}
+</div>
+
+<a href="/">Back to form</a>
+
+{{template "footer.html" .}}
