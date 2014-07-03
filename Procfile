@@ -1,1 +1,1 @@
-web: demoapp
+program: /Users/duminhtam/IdeaProjects/go/bin/ttnet
