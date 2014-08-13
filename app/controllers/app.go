@@ -6,6 +6,10 @@ type App struct {
 	*revel.Controller
 }
 
+func (c App) Google() revel.Result {
+	greeting := "gplus"
+	return c.Render(greeting)
+}
 func (c App) Facebook() revel.Result {
 	greeting := "Hello Tam"
 	return c.Render(greeting)
